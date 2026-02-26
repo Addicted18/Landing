@@ -2016,16 +2016,22 @@
       z-index: 2;
     }
 
-    .tennis-artboard-logo {
+    .tennis-artboard-logo-wrap {
       position: absolute;
-      top: clamp(0.58rem, 1.5vw, 0.88rem);
-      right: clamp(0.58rem, 1.5vw, 0.88rem);
-      width: clamp(34px, 7.2vw, 58px);
-      height: auto;
-      object-fit: contain;
+      top: clamp(0.52rem, 1.35vw, 0.82rem);
+      right: clamp(0.52rem, 1.35vw, 0.82rem);
+      width: clamp(50px, 15%, 78px);
+      aspect-ratio: 1 / 1;
       z-index: 4;
       pointer-events: none;
+    }
+
+    .tennis-artboard-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       filter: drop-shadow(0 4px 10px rgba(5, 9, 17, 0.34));
+      display: block;
     }
 
     .tennis-artboard-tag {
@@ -3039,7 +3045,9 @@
 
             <div class="tennis-right-col">
               <div class="artboard-vertical" role="img" aria-label="Koncepcyjny post IG 1080x1350 dla klubu tenisowego" data-parallax-area>
-                <img class="tennis-artboard-logo" src="Northline Tennis Club LOGO.png" alt="" aria-hidden="true">
+                <span class="tennis-artboard-logo-wrap" aria-hidden="true">
+                  <img class="tennis-artboard-logo" src="Northline Tennis Club LOGO.png" alt="" aria-hidden="true">
+                </span>
                 <p class="tennis-artboard-tag">IG Post 1080 × 1350</p>
                 <p class="tennis-artboard-title">Northline Summer League</p>
                 <div class="tennis-artboard-photo tennis-parallax" data-replace="TENNIS_HERO_ACTION_PHOTO">
